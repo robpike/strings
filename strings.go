@@ -18,6 +18,7 @@ import (
 var (
 	min    = flag.Int("min", 6, "minimum length of UTF-8 strings printed, in runes")
 	max    = flag.Int("max", 256, "maximum length of UTF-8 strings printed, in runes")
+	ascii  = flag.Bool("ascii", false, "restrict strings to ASCII")
 	offset = flag.Bool("offset", false, "show file name and offset of start of each string")
 )
 
@@ -80,7 +81,7 @@ func do(name string, file *os.File) {
 				}
 				return
 			}
-			if !strconv.IsPrint(r) {
+			if !strconv.IsPrint(r) || *ascii && r >= 0xFF {
 				print()
 				continue
 			}
