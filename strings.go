@@ -3,7 +3,7 @@
 // license that can be found in the LICENSE file.
 
 // Strings is a more capable, UTF-8 aware version of the standard strings utility.
-package main
+package main // import "robpike.io/cmd/strings"
 
 import (
 	"bufio"
