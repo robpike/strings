@@ -3,6 +3,14 @@
 // license that can be found in the LICENSE file.
 
 // Strings is a more capable, UTF-8 aware version of the standard strings utility.
+//
+// Flags(=default) are:
+//
+//	-ascii(=false)    restrict strings to ASCII
+//	-min(=6)          minimum length of UTF-8 strings printed, in runes 
+//	-max(=256)        maximum length of UTF-8 strings printed, in runes
+//	-offset(=false)   show file name and offset of start of each string
+//
 package main // import "robpike.io/cmd/strings"
 
 import (
