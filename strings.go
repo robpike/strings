@@ -34,7 +34,7 @@ var stdout *bufio.Writer
 
 func main() {
 	log.SetFlags(0)
-	log.SetPrefix("strings")
+	log.SetPrefix("strings: ")
 	stdout = bufio.NewWriter(os.Stdout)
 	defer stdout.Flush()
 
