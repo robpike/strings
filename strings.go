@@ -7,11 +7,11 @@
 // Flags(=default) are:
 //
 //	-ascii(=false)    restrict strings to ASCII
-//	-min(=6)          minimum length of UTF-8 strings printed, in runes 
+//	-min(=6)          minimum length of UTF-8 strings printed, in runes
 //	-max(=256)        maximum length of UTF-8 strings printed, in runes
 //	-offset(=false)   show file name and offset of start of each string
 //
-package main // import "robpike.io/cmd/strings"
+package main
 
 import (
 	"bufio"
